@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ES2023"
+    ],
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "noEmitOnError": true,
+    "noErrorTruncation": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2023"
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}
