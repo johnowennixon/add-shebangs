@@ -1,6 +1,6 @@
 {
   "name": "@johnowennixon/add-shebangs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Add shebangs to files",
   "keywords": [
     "shebang"
