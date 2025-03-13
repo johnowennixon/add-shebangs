@@ -1,0 +1,44 @@
+{
+  "name": "@johnowennixon/add-shebangs",
+  "version": "0.0.0",
+  "description": "Add shebangs to files",
+  "keywords": [
+    "shebang"
+  ],
+  "license": "0BSD",
+  "author": {
+    "email": "john.owen.nixon@gmail.com",
+    "name": "John Owen Nixon",
+    "url": "https://johnowennixon.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnowennixon/add-shebangs.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "type": "module",
+  "bin": {
+    "add-shebangs": "dist/add-shebangs.js"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc && chmodx --package && okay",
+    "lint": "biome check src && okay",
+    "test": "exit 0"
+  },
+  "dependencies": {
+    "argparse": "2.0.1",
+    "glob": "11.0.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@johnowennixon/chmodx": "2.0.0",
+    "@johnowennixon/okay": "3.1.0",
+    "@types/argparse": "2.0.17",
+    "@types/glob": "8.1.0",
+    "@types/node": "22.13.10",
+    "rimraf": "6.0.1",
+    "typescript": "5.8.2"
+  }
+}
